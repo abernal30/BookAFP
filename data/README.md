@@ -3,23 +3,28 @@
 All paths in the chapters are relative to the repository root (e.g. `read.xlsx("data/dfx_2.xlsx")`),
 so knit the `.Rmd` files with the working directory set to the repo root.
 
-## Files read by the book chapters
+## Files used by the book
 
-| Chapter | File read | Same data also provided as |
+The published book (https://www.arturo-bernal.com/book/AFP/index.html) downloads the
+`.csv` files straight from this repo, for example
+`read.csv("https://raw.githubusercontent.com/abernal30/BookAFP/main/data/df_dates.csv")`.
+**Do not rename, move or delete these files**, or the published book's code will break.
+
+| Chapter | `.Rmd` in this repo reads | Published book reads (raw GitHub URL) |
 |---|---|---|
 | 01 R Basics | `data_df.xlsx`, `df5.xlsx`, `df5.csv` (written and re-read to compare formats) | — |
-| 02 Data cleaning | `credit_semioriginal.xlsx` | `credit_semioriginal.csv` |
-| 06 Credit analysis | `credit_short.xlsx` | — |
+| 02 Data cleaning | `credit_semioriginal.xlsx` | `credit_semioriginal.csv`, `credit_semioriginal_num.csv` |
+| 06 Credit analysis | `credit_short.xlsx` | `credit.csv` |
 | 07 Rational agent theory | `df_dates.xlsx` | `df_dates.csv` |
-| 08 Momentum strategy | `dfx_2.xlsx` | `dfx_2.csv` |
-| 09 Portfolio management | `df_merge.xlsx`, `dfx_2.xlsx` | `df_merge.csv`, `dfx_2.csv` |
+| 08 Momentum strategy | `dfx_2.xlsx` | `dfx_2.csv`, `price_momentum_orig.csv`, `ret_momentum_orig.csv` |
+| 09 Portfolio management | `df_merge.xlsx`, `dfx_2.xlsx` | `df_merge.csv` |
 
 Chapters 03, 04 and 05 download their data from APIs / the web (quantmod, Quandl, rvest).
 
-The `.csv` twins hold the same data as the `.xlsx` files the chapters read. They are kept for
-readers who work in Python, Excel or other tools. If you edit one, update the other.
+The `.csv`/`.xlsx` pairs (`credit_semioriginal`, `df_dates`, `dfx_2`, `df_merge`) hold the same
+data. If you edit one, update the other.
 
-## Supplementary datasets (not read by any chapter)
+## Other datasets
 
 | File | Contents |
 |---|---|
