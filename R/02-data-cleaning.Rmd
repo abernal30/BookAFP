@@ -92,10 +92,13 @@ The former example was easy because we only have 3 categories, however, there ar
 
 
 
-I writted a library for data processing, "dataclean" To install it run the following code in a chunk:
+I wrote a library for data processing, "dataclean". It is not on CRAN; install it once from GitHub by running the following chunk (only one of the two lines is needed):
 
+```{r eval=FALSE}
 remotes::install_github("abernal30/dataclean")
+# or
 devtools::install_github("abernal30/dataclean")
+```
 
 
 
