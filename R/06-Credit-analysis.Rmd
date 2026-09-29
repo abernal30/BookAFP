@@ -98,16 +98,14 @@ The following code transforms that categorical variable into numerical. The code
 
 Further, I created my package that makes the procedure for us for the entire data set in one click. 
 
-Download the file: Art_0.1.0.tar.gz and install it as a package archive file. Apply the function asnum(df). Also, for simplicity, we are going to apply the na.omit() function, which eliminates the rows with missing values. 
+The package is "dataclean" (the same one used in the data cleaning chapter). Apply the function asnum(df). Also, for simplicity, we are going to apply the na.omit() function, which eliminates the rows with missing values. 
 
-Or you could install the library from:
+If you have not installed it yet, install it once from GitHub (only one of the two lines is needed):
 
-```{r}
-#library(devtools)
-#doremotes::install_github("abernal30/dataclean")
-
-#library(devtools)
-#devtools::install_github("abernal30/dataclean")
+```{r eval=FALSE}
+remotes::install_github("abernal30/dataclean")
+# or
+devtools::install_github("abernal30/dataclean")
 ```
 
 
